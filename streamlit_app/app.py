@@ -194,8 +194,9 @@ def highlight_best(s):
 # ── Sidebar ───────────────────────────────────────────────────
 try:
     st.sidebar.image(
-        "C:\\Users\\tanbi\\ids_thesis\\notebooks\\Network anomaly detection.png",
-        width=210, caption="Detect your network now! Upload a CSV with the 77 required features and see how all three models perform side by side."
+        "https://raw.githubusercontent.com/tanbin-ahmmed1/network-anomaly-detection/main/figures/network_anomaly_detection.png",
+        width=210,
+        caption="Detect your network now! Upload a CSV with the 77 required features and see how all three models perform side by side."
     )
 except Exception:
     pass
