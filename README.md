@@ -1,0 +1,166 @@
+# Network Anomaly Detection
+
+
+
+\# Detecting Anomalous Network Traffic Using Machine Learning
+
+
+
+\*\*BSc (Hons) Computer Science — Development Project\*\*
+
+\*\*Author:\*\* Tanbin Ahmmed | De Montfort University | 2025–2026
+
+\*\*Supervisor:\*\* Samuel Agbesi
+
+
+
+\---
+
+
+
+\## Project Overview
+
+
+
+This repository contains the full implementation for the thesis:
+
+\*"Detecting Anomalous Network Traffic Using Machine Learning
+
+in Enterprise Networks"\*
+
+
+
+Three machine learning models evaluated on the CICIDS2017 dataset
+
+with primary emphasis on false-positive rate reduction:
+
+
+
+| Model | Accuracy | FPR |
+
+|---|---|---|
+
+| Random Forest | 0.9986 | 0.0009 |
+
+| SVM | 0.9567 | 0.0422 |
+
+| Isolation Forest | 0.7925 | 0.1700 |
+
+
+
+\---
+
+
+
+\## Repository Structure
+
+network-anomaly-detection/
+
+├── notebooks/
+
+│   └── training.ipynb       # Full training pipeline
+
+├── streamlit\_app/
+
+│   ├── app.py               # Network analyser application
+
+│   ├── requirements.txt
+
+│   ├── rf\_model.pkl
+
+│   ├── svm\_model.pkl
+
+│   ├── iforest\_model.pkl
+
+│   └── scaler.pkl
+
+├── figures/                 # All evaluation charts
+
+└── README.md
+
+
+
+\## Dataset
+
+
+
+This project uses the
+
+\[CICIDS2017 dataset](https://www.unb.ca/cic/datasets/ids-2017.html)
+
+from the Canadian Institute for Cybersecurity.
+
+Download the CSV files and place them in a `data/` folder
+
+before running the notebook.
+
+
+
+\## Setup and Running
+
+
+
+\### Training the models
+
+
+
+```bash
+
+conda create -n ids\_thesis python=3.11 -y
+
+conda activate ids\_thesis
+
+pip install pandas numpy scikit-learn matplotlib jupyter joblib
+
+jupyter notebook notebooks/training.ipynb
+
+```
+
+
+
+Run all cells in order. Models will be saved as `.pkl` files.
+
+
+
+\### Running the Streamlit app
+
+
+
+```bash
+
+pip install streamlit
+
+cd streamlit\_app
+
+streamlit run app.py
+
+```
+
+
+
+\### Live Demo
+
+
+
+\[View deployed app](YOUR\_STREAMLIT\_URL\_HERE)
+
+
+
+\## Requirements
+
+
+
+\- Python 3.11+
+
+\- pandas, numpy, scikit-learn, matplotlib, joblib, streamlit
+
+\- \~8GB RAM recommended for full dataset training
+
+
+
+\## License
+
+
+
+For academic assessment purposes only.
+
