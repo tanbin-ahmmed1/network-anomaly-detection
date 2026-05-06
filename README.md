@@ -142,7 +142,7 @@ streamlit run app.py
 
 
 
-\[View deployed app](YOUR\_STREAMLIT\_URL\_HERE)
+\View deployed app at https://network-anomaly-detection-kzrxbzpiac3wbmqmubrt3a.streamlit.app/
 
 
 
